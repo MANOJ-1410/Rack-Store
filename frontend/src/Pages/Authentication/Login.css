@@ -243,6 +243,7 @@ label {
     transform: translateY(-50%);
     left: 10px;
     color: #555;
+    transform: scale(1.03);
 }
 
 .inputContainer input {
@@ -259,7 +260,13 @@ label {
 
 .inputContainer input:focus {
     transform: scale(1.03);
+    padding: 15px 30px 15px 15px;
+    
 }
+
+/* .fas{
+    z-index: 1;
+} */
 
 .btn-login {
     background-color: #4285f4;

@@ -164,8 +164,14 @@ label {
   }
   
 
-input:focus {
+/* input:focus {
     transform: scale(1.03);
+} */
+
+.inputContainer input:focus {
+    transform: scale(1.03);
+    padding: 15px 30px 15px 15px;
+    
 }
 
 .error {

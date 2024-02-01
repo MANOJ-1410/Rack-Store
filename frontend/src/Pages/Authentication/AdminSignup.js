@@ -348,8 +348,8 @@ const AdminSignup = () => {
               handleEmailValidation(e.target.value);
             }}
           />
-          {validation.spanEmail && <span className={styles.error}>{validation.spanEmail}</span>}
         </div>
+          {validation.spanEmail && <span className={styles.error}>{validation.spanEmail}</span>}
         </div>
 
         <div className={styles.form_group_signup}>
@@ -367,8 +367,8 @@ const AdminSignup = () => {
               handlePasswordValidation(e.target.value);
             }}
           />
-          {validation.spanPass && <span className={styles.error}>{validation.spanPass}</span>}
         </div>
+          {validation.spanPass && <span className={styles.error}>{validation.spanPass}</span>}
         </div>
 
         <div className={styles.form_group_signup}>
@@ -386,8 +386,8 @@ const AdminSignup = () => {
               handleConfirmPasswordValidation(e.target.value);
             }}
           />
-          {validation.spanCPass && <span className={styles.error}>{validation.spanCPass}</span>}
         </div>
+          {validation.spanCPass && <span className={styles.error}>{validation.spanCPass}</span>}
         </div>
 
         <button type="Submit" className={styles.btn_signup}>
