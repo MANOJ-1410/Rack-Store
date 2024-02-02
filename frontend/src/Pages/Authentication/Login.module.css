@@ -202,7 +202,7 @@ input:focus {
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'); /* Include the Font Awesome CSS */
 
-.login-container {
+.login_container {
     max-width: 400px;
     margin: 0 auto;
     margin-top: 4rem;
@@ -221,7 +221,7 @@ h2 {
     font-family: "Gowun Batang", serif;
 }
 
-.form-group {
+.form_group {
     margin-bottom: 1.40rem;
 }
 
@@ -243,7 +243,7 @@ label {
     transform: translateY(-50%);
     left: 10px;
     color: #555;
-    transform: scale(1.03);
+    /* transform: scale(1.03); */
 }
 
 .inputContainer input {
@@ -264,11 +264,7 @@ label {
     
 }
 
-/* .fas{
-    z-index: 1;
-} */
-
-.btn-login {
+.btn_login {
     background-color: #4285f4;
     color: #fff;
     padding: 10px 20px;
@@ -280,16 +276,16 @@ label {
     font-weight: bold;
 }
 
-.btn-login:hover {
+.btn_login:hover {
     background-color: #171717;
     transform: scale(1.01);
 }
 
-.member-login {
+.member_login {
     margin-top: 1rem;
 }
 
-.link-login-style {
+.link_login_style {
     margin: 0 6px;
     text-decoration: none;
     color: rgb(255, 0, 0);

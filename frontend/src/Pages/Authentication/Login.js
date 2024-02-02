@@ -129,7 +129,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { loginUser } from './Validators/BackendInterface';
-import styles from './Login.css';
+import  styles  from './Login.module.css';
 
 import { Link, useNavigate } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
@@ -201,12 +201,12 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
+    <div className= {styles.login_container}>
       <h2>LOGIN TO YOUR ACCOUNT</h2>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className={styles.form_group}>
           <label htmlFor="email">EMAIL</label>
-          <div className="inputContainer">
+          <div className= {styles.inputContainer}>
             <i className="fas fa-envelope"></i>
             <input
               type="email"
@@ -218,9 +218,9 @@ const Login = () => {
           </div>
         </div>
 
-        <div className="form-group">
+        <div className= {styles.form_group}>
           <label htmlFor="password">PASSWORD</label>
-          <div className="inputContainer">
+          <div className={styles.inputContainer}>
             <i className="fas fa-lock"></i>
             <input
               type="password"
@@ -231,12 +231,12 @@ const Login = () => {
             />
           </div>
         </div>
-        <button type="submit" className="btn-login">
+        <button type="submit" className={styles.btn_login}>
           LOGIN
         </button>
       </form>
-      <div className="flexCenter member-login">
-        Not a Member? <Link className="link-login-style" to={'/signup'}>
+      <div className={styles.flexCenter_member_login}>
+        Not a Member? <Link className={styles.link_login_style}  to={'/signup'}>
           Signup
         </Link>
       </div>
