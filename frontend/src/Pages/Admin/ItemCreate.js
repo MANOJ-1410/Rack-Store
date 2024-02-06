@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './ItemCreate.css';
+// import './ItemCreate.css';
+import styles from './ItemCreate.module.css';
 import { jwtDecode } from 'jwt-decode';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
@@ -62,11 +63,11 @@ const ItemCreate = () => {
   };
 
   return (
-    <div className="form-container-create">
+    <div className= {styles.form_container_create}>
       <h2>Create a New Rack</h2>
-      <form className="item-form" onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label htmlFor="image" className="label">
+      <form className= {styles.item_form} onSubmit={handleSubmit}>
+        <div className={styles.form_group}>
+          <label htmlFor="image" className={styles.label}>
             Image URL
           </label>
           <input
@@ -75,16 +76,16 @@ const ItemCreate = () => {
             name="image"
             value={item.image}
             onChange={handleImageChange}
-            className="input"
+            className={styles.input}
           />
           {item.image && (
-            <div className="image-preview">
-              <img src={item.image} alt="Item Preview" className="preview" />
+            <div className={styles.image_preview}>
+              <img src={item.image} alt="Item Preview" className= {styles.preview} />
             </div>
           )}
         </div>
-        <div className="form-group">
-          <label htmlFor="productName" className="label">
+        <div className={styles.form_group}>
+          <label htmlFor="productName" className={styles.label}>
             Rack Name
           </label>
           <input
@@ -93,11 +94,11 @@ const ItemCreate = () => {
             name="productName"
             value={item.productName}
             onChange={handleChange}
-            className="input"
+            className={styles.input}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="days" className="label">
+          <label htmlFor="days" className={styles.label}>
             Days
           </label>
           <input
@@ -106,11 +107,11 @@ const ItemCreate = () => {
             name="days"
             value={item.days}
             onChange={handleChange}
-            className="input"
+            className={styles.input}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="price" className="label">
+          <label htmlFor="price" className={styles.label}>
             Price
           </label>
           <input
@@ -119,11 +120,11 @@ const ItemCreate = () => {
             name="price"
             value={item.price}
             onChange={handleChange}
-            className="input"
+            className={styles.input}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="state" className="label">
+          <label htmlFor="state" className={styles.label}>
             State
           </label>
           <input
@@ -132,11 +133,11 @@ const ItemCreate = () => {
             name="state"
             value={item.state}
             onChange={handleChange}
-            className="input"
+            className={styles.input}
           />
         </div>
         <div className="form-group">
-          <label htmlFor="city" className="label">
+          <label htmlFor="city" className={styles.label}>
             City
           </label>
           <input
@@ -145,10 +146,10 @@ const ItemCreate = () => {
             name="city"
             value={item.city}
             onChange={handleChange}
-            className="input"
+            className={styles.input}
           />
         </div>
-        <button type="submit" className="button">
+        <button type="submit" className={styles.button}>
           Create Rack
         </button>
       </form>
