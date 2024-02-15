@@ -1,0 +1,512 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.navbar_bg{
+    background-color: white;
+    width: 100%;
+    height: 7vh;
+    box-shadow: 0 4px 6px 0 rgba(36, 36, 36, 0.2);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8px;
+}
+.logo_img{
+    margin-right: 8px;
+
+}
+.logo_text{
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+.right_line{
+    border-right: 1px solid gray;
+    height: 3vh;
+    margin-left: 10px;
+}
+.cartNav_container{
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.login{
+    margin: 0 6px
+}
+.signup{
+    margin: 0 8px
+}
+.logout{
+    margin: 0 8px;
+}
+.admin_view{
+    margin: 0 8px;
+}
+.logo_img_src{
+    width: 3rem;
+    height: 3/2;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background-color: white; 
+    border-radius: 100%;
+    border: 0.1px solid rgb(149, 145, 145);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* CHANGES I HV MADE */
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar_container{
+    width: 100%;
+    height: 80px;
+    background: #d0cdef;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}  
+
+.logo_img{
+  
+}
+h2{
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #fefefe;
+}
+.logo_img_src{
+    width: 3rem;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    background-color: white; 
+    border-radius: 100%;
+    border: 0.1px solid rgb(149, 145, 145);
+    margin-left: 25px;
+}
+
+
+.name{
+    display: none; 
+}
+.navbar_center{
+    display: block;
+}
+.logo_img {
+    display: block;
+}
+.flexcenter{
+    display: block;
+}
+
+.navbar_center .admin_view {
+    position: relative;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.navbar_center  .admin_view:hover {
+    color:#11101b;
+    background: #fefefe; 
+} 
+
+
+@media only screen and (max-width: 1320px) {
+    .navbar_container {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .navbar_container  {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .name {
+        display: block;
+        cursor: pointer;
+    }
+    .name .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    
+    .navbar_center .admin_view {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden;
+        display: block;
+        text-align: center;
+        opacity: 0;
+    }
+    .navbar_center .admin_view {
+        margin-bottom: 12px;
+    } 
+}
+
+
+.cartNav_container{
+    text-decoration: none;
+    margin-left: 8px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.login{
+    margin: 0 6px
+}
+.signup{
+    margin: 0 8px
+}
+.logout{
+    margin: 0 8px;
+}
+.admin_view{
+    margin: 0 8px;
+}
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Gowun Batang", serif;
+    box-sizing: border-box;
+}
+ .navbar_container {
+    width: 100%;
+    height: 80px;
+    background: #d0cdef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 20px; */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .navbar_container {
+      padding: 0 50px;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .navbar_container {
+      padding: 0 100px;
+    }
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .navbar_container {
+      padding: 0 150px;
+    }
+  }
+  
+  .logo_img {
+    display: flex;
+    align-items: center;
+  }
+  
+  h2 {
+    margin-left: 18px;
+    font-weight: bolder;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-top: 16px;
+  }
+  
+  .logo_img_src {
+    width: 3.5rem;
+    object-fit: contain;
+    border-radius: 20%;
+    border: 1px solid #959191;
+    margin-left: -100px; /* Initial margin for left alignment */
+  
+    /* Adjust margin for responsiveness */
+    @media only screen and (max-width: 1024px) {
+      margin-left: -80px; /* Adjust margin for smaller screens */
+    }
+  
+    @media only screen and (max-width: 768px) {
+      margin-left: -100px; /* Remove margin for extra small screens */
+    }
+  }
+
+  
+  
+  .name {
+    display: none;
+  }
+ 
+  .cartNav_container {
+    text-decoration: none;
+    margin-left: 8px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  
+
+  
+  .login,
+  .signup,
+  .logout {
+    font-size: 20px;
+    margin-right: -80px; /* Initial margin for right alignment */
+  
+    /* Adjust margin for responsiveness */
+    @media only screen and (max-width: 1024px) {
+      margin-right: -60px; /* Adjust margin for smaller screens */
+    }
+  
+    @media only screen and (max-width: 768px) {
+      margin-right: 0; /* Remove margin for extra small screens */
+    }
+  }
+    
+
+
+
+  .flexCenter{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+.flexCenter img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.flexCenter span{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+ .admin_view {
+    position: relative;
+    color: #fefefe;
+    /* font-size: 20px; */
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    /* margin: 0 5px; */
+    /* column-gap: 0.5rem; */
+}
+.admin_view:hover {
+    color:#11101b;
+    background: #fefefe; 
+} 
+ 
+
+.line {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin: 6px 0;
+  }
+
+
+
+@media only screen and (max-width: 900px) {
+    .name {
+        display: block;
+        cursor: pointer;
+    }
+    .name .line {
+        width: 30px;
+        height: 3px;
+        background: #fefefe;
+        margin: 6px 0;
+    }
+    .admin_view link {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #11101b;
+        transition: 0.5s;
+        overflow: hidden; 
+        display: block;
+        text-align: center;
+        opacity: 0;
+    }
+
+ .admin_view link {
+        height: 50px;
+        opacity: 1;
+    }
+    .admin_view link {
+        margin-bottom: 12px;
+    } 
+    link {
+        display: block;
+        width: 25px;
+        height: 2px;
+        background-color: #333;
+        margin: 6px 0;
+      }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar_container {
+      position: relative;
+    }
+  
+    .navbar_center {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff; /* Adjust as needed */
+      border-top: 1px solid #ccc; /* Adjust as needed */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust as needed */
+      z-index: 999;
+    }
+  
+    .navbar_container.active .navbar_center {
+      display: flex;
+    }
+  }
+
+  /* .name  */
+  .nav-btn {
+    padding: 50px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+  }
+  @media only screen and (max-width: 1024px) {
+	.name .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+    .navbar_container .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+    .navbar_container .responsive_nav {
+		transform: translateY(100vh);
+	}
+}
+
+
+.navbar_center_below {
+    position: fixed;
+    top: 80px; /* Adjust this value according to your navbar height */
+    left: 0;
+    width: 100%;
+    height: 50vh; /* Adjust to fill the remaining viewport height */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    text-align: center;
+    z-index: 999;
+    display: block;
+    justify-content: center;
+    align-items: center
+}
+
+.navbar_center_below .admin_view {
+    display: block; /* Change display to inline-block */
+    padding: 10px 20px; /* Add padding for spacing */
+    margin: 10px; /* Adjust spacing between items */
+    color: #fefefe; /* Text color */
+    transition: 0.3s;
+    border-radius: 50px; /* Rounded corners */
+}
+
+.navbar_center_below .admin_view:hover {
+    background: #fefefe; /* Hover background color */
+    color: #11101b; /* Hover text color */
+    border-radius: 50px; /* Rounded corners */
+}
+
