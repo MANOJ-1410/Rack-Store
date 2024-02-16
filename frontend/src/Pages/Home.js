@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './Style/Home.css';
+// import './Style/Home.css';
+import styles from './Style/Home.module.css';
 import { useCart } from '../Context/CartContext';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
@@ -55,13 +56,13 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container">
+    <div className={styles.home_container}>
       {products
         .filter((product) => product.availability) 
         .map((product) => (
-          <div className="card" key={product._id}>
+          <div className={styles.card} key={product._id}>
             <img src={product.image} alt={product.name} />
-            <div className="card-details">
+            <div className={styles.card_details}>
               <h3>{product.name}</h3>
               <p>Price: ₹{product.price}</p>
               <p>Days: {product.days}</p>

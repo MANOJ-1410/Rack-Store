@@ -2,11 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { jwtDecode } from 'jwt-decode';
 import axios from 'axios';
-import './Style/Cart.css';
+// import './Style/Cart.css';
+import styles from './Style/Cart.module.css';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import Checkout from './Checkout';
 import { useCart } from '../Context/CartContext';
 import { useToast } from '../Context/ToastContext';
+
 
 const Cart = () => {
   const navigate = useNavigate();
@@ -170,13 +172,13 @@ const Cart = () => {
   
 
   return (
-    <div className="cart-container">
+    <div className={styles.cart_container}>
       <h2>Rack Cart</h2>
       {isLoading ? (
         <p>Loading...</p>
       ) : (
-        <div className="table-container">
-          <table className="cart-table">
+        <div className={styles.table_container}>
+          <table className={styles.cart_table}>
             <thead>
               <tr>
                 <th>Product</th>
@@ -189,13 +191,14 @@ const Cart = () => {
               {cartItems.map((cartItem) => (
                 // Check if the product has availability set to true
                 cartItem?.productId?.availability && (
-                  <tr key={cartItem._id} className="cart-item">
+                  <tr key={cartItem._id} className={styles.cart_item}>
                     <td>{cartItem?.productId?.productName}</td>
                     <td>{cartItem?.productId?.price}</td>
                     <td>{cartItem?.quantity}</td>
                     <td>
                       <button onClick={() => handleIncreaseQuantity(cartItem._id)}>
                         <FaPlus />
+   
                       </button>
                       <button
                         onClick={() => handleDecreaseQuantity(cartItem._id)}
@@ -212,7 +215,7 @@ const Cart = () => {
           </table>
         </div>
       )}
-      <button className="checkout-button-main" onClick={openModal}>
+      <button className={styles.checkout_button_main} onClick={openModal}>
         Checkout
       </button>
       <Checkout

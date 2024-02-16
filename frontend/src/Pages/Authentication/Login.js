@@ -235,7 +235,7 @@ const Login = () => {
           LOGIN
         </button>
       </form>
-      <div className={styles.flexCenter_member_login}>
+      <div className={styles.member_login}>
         Not a Member? <Link className={styles.link_login_style}  to={'/signup'}>
           Signup
         </Link>

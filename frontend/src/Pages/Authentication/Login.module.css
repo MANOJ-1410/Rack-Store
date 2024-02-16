@@ -283,6 +283,7 @@ label {
 
 .member_login {
     margin-top: 1rem;
+    text-align: center;
 }
 
 .link_login_style {
@@ -297,7 +298,7 @@ label {
     margin-top: 5px;
 }
 
-.flexCenter_member_signup {
+.member_signup {
     text-align: center;
     margin-top: 10px;
 }
